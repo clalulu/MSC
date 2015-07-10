@@ -1,0 +1,29 @@
+/* Custom Css */
+html, body {
+    background-color: #eee;
+}
+.xir {
+    padding: 30px 60px;
+    display: block;
+    max-width: 500px;
+    margin: 10px auto;
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #bbb;
+}
+.xir_tables {
+    max-width: 1000px
+}
+.btn-xir {
+    background-color: #222;
+    color: #9d9d9d;
+    border-color: #9d9d9d;
+    transition: all 200ms ease-in-out;
+}
+.btn-xir:hover, .btn-xir:focus {
+    background-color: #000;
+}
+.xir-no-res {
+    width: 1000px;
+}

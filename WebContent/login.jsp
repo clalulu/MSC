@@ -51,7 +51,7 @@
     </nav>
 
     <div class="content xir text-center">
-        <form class="form-signin" action="UserAction.action" method="post" onSubmit="return check()">
+        <form class="form-signin" action="user!login.action" method="post" onSubmit="return check()">
             <h2 class="form-signin-heading"><% out.print(pageName); %></h2>
             <div class="form-group">
                 <label for="username">Username</label>
