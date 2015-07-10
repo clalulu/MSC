@@ -27,3 +27,6 @@ html, body {
 .xir-no-res {
     width: 1000px;
 }
+.ui-widget-header {
+    background: #555;
+}
