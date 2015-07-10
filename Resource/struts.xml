@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+ 
+<struts>
+<constant name="struts.devMode" value="true" />
+<package name="struts" namespace="/"  extends="struts-default">
+     <action name="user" class="it.msc.action.UserAction">
+         <result name="register">/jsps/user/register.jsp</result>
+         <result name="login">/jsps/user/login.jsp</result>
+         <result name="loginSuccess">/index.jsp</result>
+         <result name="updatepasswordSuccess">/jsps/user/info/updatepwdSuccess.jsp</result>
+    </action>
+    <action name="admin" class="it.msc.action.AdminAction">
+         <result name="success" type="redirect">index.jsp</result>
+         <result name="failed">/login.jsp</result>
+          <result name="logout">/login.jsp</result>
+    </action>       
+    </package>
+</struts>
