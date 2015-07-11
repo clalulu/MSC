@@ -9,6 +9,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widht=device-width, initial-scale=1, user-scalable=no">
     <!-- The jQuery library is a prerequisite for all jqSuite products -->
     <script type="text/ecmascript" src="${pageContext.request.contextPath}/assets/js/jquery.min.js"></script>
     <script type="text/ecmascript" src="${pageContext.request.contextPath}/assets/js/jquery-ui.min.js"></script>
@@ -25,6 +27,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/assets/css/jquery-ui-1.10.0.bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/assets/css/ui.jqgrid-bootstarp.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/assets/css/nopoxir.custom.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="${pageContext.request.contextPath}/assets/css/nopoxir.noresponsive.css" />
     <style type="text/css">
         #gbox_jqGrid {
             margin: 20px auto !important;
@@ -79,7 +82,6 @@
         <p class="copyright"><% out.print(pageName); %> <span class="glyphicon glyphicon-copyright-mark"></span> 2015</p>
     </div>
         <script type="text/javascript">
-
             $(document).ready(function () {
                 /* Inizializza for editing */
                 var template = "<div style='margin-left:15px;'><div> OrderID <sup>*</sup>:</div><div> {OrderID} </div>";
@@ -164,7 +166,6 @@
                     pager: "#jqGridPager",
                     caption: "Controll Table Page"
                 });
-
                 /* Inizializza Tasti */
                 $('#jqGrid').jqGrid('filterToolbar');
                 $('#jqGrid').jqGrid('navGrid','#jqGridPager',
@@ -195,7 +196,6 @@
                     }
                 });
             });
-
             // the event handler on expanding parent row receives two parameters
             // the ID of the grid tow  and the primary key of the row
             function showChildGrid(parentRowID, parentRowKey) {

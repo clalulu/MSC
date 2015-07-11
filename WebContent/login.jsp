@@ -1,18 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <% /**
 * NapoXir Login.jsp
 * @author: Sir Xiradorn
 */
 %>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <% String pageName = "NapoXir - Login Form"; %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="widht=device-width, initial-scale=1">
     <title><% out.print(pageName); %></title>
-    <link href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/assets/css/nopoxir.custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/css/nopoxir.custom.css">
 </head>
 <body>
 
@@ -51,7 +52,7 @@
     </nav>
 
     <div class="content xir text-center">
-        <form class="form-signin" action="user!login.action" method="post" onSubmit="return check()">
+        <form class="form-signin" action="UserAction.action" method="post" onSubmit="return check()">
             <h2 class="form-signin-heading"><% out.print(pageName); %></h2>
             <div class="form-group">
                 <label for="username">Username</label>
@@ -70,8 +71,8 @@
         <p class="copyright"><% out.print(pageName); %> <span class="glyphicon glyphicon-copyright-mark"></span> 2015</p>
     </div>
 
-    <script type="text/javascript" src="<%=request.getContextPath()%>/assets/js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/assets/js/user/login.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/user/login.js"></script>
 </body>
 </html>
